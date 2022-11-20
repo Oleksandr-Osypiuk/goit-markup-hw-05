@@ -65,7 +65,7 @@
       <section class="hero-studio">
         <div class="container">
           <h1 class="hero-title">Ефективні рішення для вашого бізнесу</h1>
-          <button type="button" class="button-studio">Замовити послугу</button>
+          <button type="button" class="button-studio" data-modal-open>Замовити послугу</button>
         </div>
       </section>
       <!-- Features -->
@@ -539,14 +539,15 @@
       </div>
     </footer>
     <!-- Modal section -->
-    <div class="backdrop">
-      <div class="modal-window">
-        <div class="modal-icon-wrapper">
-          <svg class="modal-icon" width="18" height="18">
-            <use href="./images/symbol-defs.svg#icon-close"></use>
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <div class="modal-btn" data-modal-close>
+          <svg class="modal-btn-icon" width="18" height="18">
+            <use href="./images/symbol-defs.svg#icon-close-black"></use>
           </svg>
         </div>
       </div>
     </div>
+    <script src="./js/modal.js"></script>
   </body>
 </html>
